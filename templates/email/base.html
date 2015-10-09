@@ -1,0 +1,40 @@
+{% filter inline_styles %}<html>
+    <head>
+        <style>
+h1 {
+    font-family: "Comic Sans MS", sans-serif;
+    color: pink;
+}
+
+p {
+    padding: 30px;
+}
+
+footer {
+    text-align: right;
+    color: #aaa;
+    border-top: 1px solid #eee;
+    padding: 5px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
+    background: white;
+}
+
+body {
+    background: #fafafa;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}{% endblock %}
+            <footer>Good Company Ltd.</footer>
+        </div>
+    </body>
+</html>{% endfilter %}
